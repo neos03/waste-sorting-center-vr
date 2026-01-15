@@ -2341,7 +2341,6 @@ GameObject:
   - component: {fileID: 720368698313247079}
   - component: {fileID: 8051564079066105032}
   - component: {fileID: 9165596191185281698}
-  - component: {fileID: 9165596191185281700}
   - component: {fileID: 9165596191185281699}
   m_Layer: 0
   m_Name: Handle
@@ -2849,22 +2848,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1988732226}
   lever: {fileID: 720368698313247079}
-  minAngle: -30
-  maxAngle: 30
---- !u!114 &9165596191185281700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3903281061203724096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0964eac65378e054cabc8f173691fb61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  lever: {fileID: 0}
   minAngle: -30
   maxAngle: 30
 --- !u!4 &9204841656076299753
