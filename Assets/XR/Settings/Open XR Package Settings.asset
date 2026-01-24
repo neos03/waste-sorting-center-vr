@@ -115,6 +115,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-8702016252521759316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3aced3429e5911458f4da2dac9d0f29, type: 3}
+  m_Name: MetaHandTrackingAim Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Meta Hand Tracking Aim
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metahandtrackingaim
+  openxrExtensionStrings: XR_FB_hand_tracking_aim
+  company: Unity
+  priority: 0
+  required: 0
 --- !u!114 &-8571915561447357325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +176,26 @@ MonoBehaviour:
   priority: 0
   required: 0
   ignoreValidationErrors: 0
+--- !u!114 &-8149138289338025114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e314dfef9af0904e80129bcc0a79361, type: 3}
+  m_Name: HandTracking Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Hand Tracking Subsystem
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_EXT_hand_tracking
+  company: Unity
+  priority: -100
+  required: 0
 --- !u!114 &-8130684438435325951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,24 +822,26 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 1443452708213354362}
+  - {fileID: 8221564594354640495}
   - {fileID: -8749980634715080836}
-  - {fileID: 9096479736163431129}
-  - {fileID: 5047315830286589360}
-  - {fileID: 6504682016904032715}
-  - {fileID: 5007098057516315081}
-  - {fileID: 2497339995422133549}
-  - {fileID: 928296757526069075}
+  - {fileID: 4893829345954421791}
+  - {fileID: -4478006660784508864}
+  - {fileID: -6081641041439107477}
+  - {fileID: 32361891232910083}
+  - {fileID: -34596358968032513}
+  - {fileID: -5941725581135416239}
+  - {fileID: 4101758021959112950}
   - {fileID: -4647824206626811188}
-  - {fileID: 4025793028449617705}
-  - {fileID: -381482547018402083}
-  - {fileID: 5447152813868908602}
-  - {fileID: -4454024988132797082}
-  - {fileID: 8696673654983134887}
+  - {fileID: -1028784285735575096}
+  - {fileID: -2513858183220632965}
+  - {fileID: 6841333374066517713}
+  - {fileID: -8316650401159007347}
+  - {fileID: -8895518590110429109}
   - {fileID: -4731438336562001402}
-  - {fileID: 4135229692886101830}
-  - {fileID: 2220871646205782247}
+  - {fileID: 2316775424616146661}
+  - {fileID: -5611916350011621528}
   - {fileID: 239522605376452086}
+  - {fileID: 7886296172035248804}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -1093,6 +1135,7 @@ MonoBehaviour:
   - {fileID: 8968387473496227895}
   - {fileID: -7492839480718335507}
   - {fileID: 9020184986697725232}
+  - {fileID: -8702016252521759316}
   - {fileID: 7497383018830012468}
   - {fileID: 1027242606257235352}
   - {fileID: 7223869130901287869}
@@ -1103,6 +1146,7 @@ MonoBehaviour:
   - {fileID: -6368128839055358620}
   - {fileID: -7581625304019661375}
   - {fileID: -1065019599540112960}
+  - {fileID: -8149138289338025114}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -1769,6 +1813,26 @@ MonoBehaviour:
   priority: 0
   required: 0
   ignoreValidationErrors: 0
+--- !u!114 &4101758021959112950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3aced3429e5911458f4da2dac9d0f29, type: 3}
+  m_Name: MetaHandTrackingAim Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Meta Hand Tracking Aim
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metahandtrackingaim
+  openxrExtensionStrings: XR_FB_hand_tracking_aim
+  company: Unity
+  priority: 0
+  required: 0
 --- !u!114 &4135229692886101830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,6 +1885,7 @@ MonoBehaviour:
   - {fileID: 2452871323707042485}
   - {fileID: -6843486060098154274}
   - {fileID: -4626429198338002469}
+  - {fileID: 5004788200634962585}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -1970,6 +2035,26 @@ MonoBehaviour:
   openxrExtensionStrings: XR_EXT_conformance_automation
   company: Unity
   priority: 0
+  required: 0
+--- !u!114 &5004788200634962585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e314dfef9af0904e80129bcc0a79361, type: 3}
+  m_Name: HandTracking Metro
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Hand Tracking Subsystem
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_EXT_hand_tracking
+  company: Unity
+  priority: -100
   required: 0
 --- !u!114 &5007098057516315081
 MonoBehaviour:
@@ -2255,6 +2340,26 @@ MonoBehaviour:
   openxrExtensionStrings: 
   company: Unity
   priority: 0
+  required: 0
+--- !u!114 &7886296172035248804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e314dfef9af0904e80129bcc0a79361, type: 3}
+  m_Name: HandTracking Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Hand Tracking Subsystem
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_EXT_hand_tracking
+  company: Unity
+  priority: -100
   required: 0
 --- !u!114 &7933840658392052806
 MonoBehaviour:

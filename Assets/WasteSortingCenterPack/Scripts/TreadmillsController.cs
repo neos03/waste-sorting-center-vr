@@ -41,5 +41,17 @@ public class TreadmillsController : MonoBehaviour
     public void SetPaused(bool value)
     {
         isPaused = value;
+
+        if (isPaused)
+        {
+            currentSpeed = 0f;
+            refSpeed = 0f;
+            SetSpeed(0f); 
+        }
     }
+    public void SetTargetSpeed01(float value)
+    {
+        targetSpeed = Mathf.Clamp01(value);
+    }
+
 }

@@ -1,32 +1,27 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EmergencyHandleVR : MonoBehaviour
 {
     public TreadmillsController controller;
-    public Transform handle;              
+    public Transform handle;
     public float pulledThreshold = 0.10f;
-    public float pauseSeconds = 3f;
 
-    Vector3 startLocalPos;
-    bool triggered;
+    private Vector3 startLocalPos;
 
-    void Start() => startLocalPos = handle.localPosition;
+    void Start()
+    {
+        startLocalPos = handle.localPosition;
+
+        // ✅ Tapis en marche au départ
+        controller.SetPaused(false);
+    }
 
     void Update()
     {
         float d = Vector3.Distance(handle.localPosition, startLocalPos);
+        bool isPulled = d >= pulledThreshold;
 
-        if (!triggered && d >= pulledThreshold)
-        {
-            triggered = true;
-            controller.SetPaused(true);
-            Invoke(nameof(Unpause), pauseSeconds);
-        }
-    }
-
-    void Unpause()
-    {
-        controller.SetPaused(false);
-        triggered = false;
+        // 🔴 Tiré => pause, relâché => marche
+        controller.SetPaused(isPulled);
     }
 }
